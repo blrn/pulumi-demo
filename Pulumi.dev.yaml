@@ -1,0 +1,6 @@
+config:
+  pulumi-infra-challenge:logRetention: "1"
+  pulumi-infra-challenge:greeterBatchSize: "3"
+  pulumi-infra-challenge:greeterQueueName: greeter-queue-dev
+  pulumi-infra-challenge:greeterLocale: en_AU
+  aws:region: us-east-1

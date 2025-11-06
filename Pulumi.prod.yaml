@@ -1,0 +1,4 @@
+config:
+  aws:region: us-west-2
+  pulumi-infra-challenge:greeterBatchSize: 2
+  pulumi-infra-challenge:greeterQueueName: greeter-queue-prod
