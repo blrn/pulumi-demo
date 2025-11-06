@@ -1,4 +1,4 @@
-# Infrastructure as Code Challenge
+# Pulumi Code Challenge
 
 This is a project setup to demo Pulumi and deploying infrastructure to AWS.
 It manages 2 simple AwS Lambda functions, they are:
@@ -35,10 +35,10 @@ These were chosen to show how using components in Pulumi allows for reuse
 
  | Key                                       | Description                             | Default     |
  |-------------------------------------------|-----------------------------------------|-------------|
- | `aws:region`                              | The AWS region to deploy resources into | `us-east-1` |
- | `pulumi-infra-challenge:logRetention`     | The log retentikon in days for all apps | `5`           |
+ | `aws:region`                              | The AWS region to deploy resources into | `us-west-1` |
+ | `pulumi-infra-challenge:logRetention`     | The log retentikon in days for all apps | `5`         |
  | `pulumi-infra-challenge:greeterQueueName` | The name of the SQS Queue               |             |
- | `pulumi-infra-challenge:greeterBatchSize` | The batch size of the greeter function  | `5`           |
+ | `pulumi-infra-challenge:greeterBatchSize` | The batch size of the greeter function  | `5`         |
  | `pulumi-infra-challenge:greeterLocale`    | The locale for the greeter function     | `en_US`     |
 
  Use `pulumi config set <key> <value>` to customize configuration.
