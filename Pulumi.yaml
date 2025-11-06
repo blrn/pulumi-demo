@@ -1,0 +1,21 @@
+name: pulumi-infra-challenge
+description: Use Pulumi to define and deploy infrastructure for a set of serverless worker functions running on AWS Lambda
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-typescript
+  logRetention:
+    description: The log retention in days for all apps
+    default: 5
+  greeterQueueName:
+    description: The name of the queue to use for the greeter function
+  greeterBatchSize:
+    description: The batch size for the greeter function
+    default: 5
+  greeterLocale:
+    description: The locale for the greeter function
+    default: en_US
