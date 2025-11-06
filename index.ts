@@ -38,7 +38,7 @@ const sizerFunc = new BucketFunc("sizer", {
         },
     },
     s3Events: ["s3:ObjectCreated:*"],
-})
+});
 
 console.log(`Stack: ${stack}`);
 console.log(`Global log retention: ${logRetention} days`);
